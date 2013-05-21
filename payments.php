@@ -1,7 +1,6 @@
 <?php
 
 $shared_secret = '#_YOUR_SHARED_SECRET_#';
-
 $request = parse_signed_request($_GET['signed_request'], $shared_secret);
 
 // Parse the signed request
