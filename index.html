@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="utf-8" /> 
+    <title>GameOver PHP Payments</title>  
+    <script src="http://tmgames.nl/static/external/gameover.client.js?f71e919f"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+    <script type="text/javascript">        
+        
+        $(document).ready(function() {
+            
+            $('#payment').click(function(){
+                GameOver.ui({
+                    method: "payment",
+                    order_info: 'tom|testpayment|fake'
+                },
+                function(response) {
+                    if (response && response.errorCode == 0) {
+                    console.log(response);
+                } else {
+                    console.log(response);
+                }
+                });
+            });
+                
+        });
+        
+        function init() {
+            
+            // Init the API
+            GameOver.init();
+            
+            // Resisze frame
+            GameOver.Canvas.setSize({height: 750});
+            
+        };
+        
+
+        
+        
+    </script>  
+   
+    
+</head>  
+
+<body id="index" class="home" onload="init();">
+    
+    <a href="javascript:void();" id="payment">Make a payment</a>
+
+</body> 
+</html>
