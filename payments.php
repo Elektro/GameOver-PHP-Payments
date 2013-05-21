@@ -89,7 +89,7 @@ function parse_signed_request($signed_request, $secret) {
         return $data;
     }
     
-    function base64_url_decode($input) {
+function base64_url_decode($input) {
     return base64_decode(strtr($input, '-_', '+/'));
 }
 
