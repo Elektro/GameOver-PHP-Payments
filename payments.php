@@ -49,7 +49,7 @@ if ($request_type == 'payments_get_items') {
     // Construct response.
     $response = array(
         'content' => array(
-            // Confirm that the payment has failed
+            // Send the correct status update
             'status' => $new_status,
             // Relay the orderid
             'order_id' => $order_details_id,
