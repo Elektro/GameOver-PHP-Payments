@@ -34,22 +34,16 @@ if ($request_type == 'payments_get_items') {
     
 } elseif ($request_type == 'payments_status_update') {
     
-    // 
-    
     // Get the specific details for this order
     $order_details_status = $request['status'];
     $order_details_id = $request['order_id'];
     
     if ($order_details_status == 'placed') {
-        
         // The payment has been succesfully handled on our side
         $new_status = 'settled';
-        
     } elseif ($order_details_status == 'failed') {
-        
         // The payment has been unsuccesfully handled on our side
-        $new_status = 'failed';
-        
+        $new_status = 'failed';  
     }
     
     // Construct response.
@@ -63,7 +57,7 @@ if ($request_type == 'payments_get_items') {
     );
     
     // Response must be JSON encoded.
-        $response = json_encode($response);
+    $response = json_encode($response);
         
     // Send response.
     echo $response;
