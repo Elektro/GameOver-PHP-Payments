@@ -7,6 +7,6 @@ Use in combination with the GameOver API: http://tmgames.nl/static/api/index.htm
 
 See a live example here: http://www.hyves.nl/games/toms-farm-payments
 
-*NOTE* 
+**NOTE** 
 
 This example does not handle the retrieval of order data and the actual payout towards the game. It goes without saying that you should include this part yourself.
