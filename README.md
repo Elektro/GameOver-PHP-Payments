@@ -1,3 +1,4 @@
+[![Stories in Ready](http://badge.waffle.io/elektro/GameOver-PHP-Payments.png)](http://waffle.io/elektro/GameOver-PHP-Payments)  
 GameOver PHP Payments
 =====================
 
