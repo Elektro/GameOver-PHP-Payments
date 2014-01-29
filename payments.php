@@ -29,7 +29,7 @@ if ($request_type == 'payments_get_items') {
     // Send response.
     echo $response;
     
-    //kthxbye
+    // kthxbye
     exit;
     
 } elseif ($request_type == 'payments_status_update') {
@@ -62,7 +62,7 @@ if ($request_type == 'payments_get_items') {
     // Send response.
     echo $response;
     
-    //kthxbye
+    // kthxbye
     exit;
 }
 
